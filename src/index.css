@@ -1,0 +1,177 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root,
+:root[data-palette="sage"] {
+  --bg-canvas: #f5f7f5;
+  --bg-card: #ffffff;
+  --bg-surface-muted: #ebf0ec;
+  --bg-surface-secondary: #eef3ef;
+  --bg-tint: #e3efe8;
+  --bg-tint-soft: #eef6f1;
+  --border-subtle: #dde5df;
+  --border-tint: #b8d5c6;
+  --accent-solid: #2e6b5b;
+  --accent-solid-hover: #25584a;
+  --accent-solid-fg: #ffffff;
+  --accent-text: #275c4e;
+}
+
+.dark,
+.dark[data-palette="sage"] {
+  --bg-canvas: #0e1412;
+  --bg-card: #151e1b;
+  --bg-surface-muted: #1b2622;
+  --bg-surface-secondary: #1c2824;
+  --bg-tint: rgba(123, 201, 176, 0.14);
+  --bg-tint-soft: rgba(123, 201, 176, 0.09);
+  --border-subtle: #25332d;
+  --border-tint: #355a4c;
+  --accent-solid: #83ceb6;
+  --accent-solid-hover: #97d9c4;
+  --accent-solid-fg: #0d1714;
+  --accent-text: #95d9c3;
+}
+
+:root[data-palette="lavender"] {
+  --bg-canvas: #f7f6fa;
+  --bg-card: #ffffff;
+  --bg-surface-muted: #eeecf5;
+  --bg-surface-secondary: #f2f0f8;
+  --bg-tint: #ebe6f7;
+  --bg-tint-soft: #f3effb;
+  --border-subtle: #e2dfee;
+  --border-tint: #c6bce8;
+  --accent-solid: #5d4d8f;
+  --accent-solid-hover: #4d3f79;
+  --accent-solid-fg: #ffffff;
+  --accent-text: #524380;
+}
+
+.dark[data-palette="lavender"] {
+  --bg-canvas: #111018;
+  --bg-card: #191724;
+  --bg-surface-muted: #211e2e;
+  --bg-surface-secondary: #222031;
+  --bg-tint: rgba(185, 166, 242, 0.14);
+  --bg-tint-soft: rgba(185, 166, 242, 0.09);
+  --border-subtle: #2b283b;
+  --border-tint: #4c4270;
+  --accent-solid: #bfb0f5;
+  --accent-solid-hover: #cec2f8;
+  --accent-solid-fg: #12101c;
+  --accent-text: #cabdf8;
+}
+
+:root[data-palette="sky"] {
+  --bg-canvas: #f4f7fb;
+  --bg-card: #ffffff;
+  --bg-surface-muted: #e8eff6;
+  --bg-surface-secondary: #edf3f9;
+  --bg-tint: #e1eef9;
+  --bg-tint-soft: #edf5fc;
+  --border-subtle: #dbe5f0;
+  --border-tint: #b3d0ea;
+  --accent-solid: #2d618e;
+  --accent-solid-hover: #245076;
+  --accent-solid-fg: #ffffff;
+  --accent-text: #27557d;
+}
+
+.dark[data-palette="sky"] {
+  --bg-canvas: #0e1319;
+  --bg-card: #151c24;
+  --bg-surface-muted: #1b242e;
+  --bg-surface-secondary: #1c2631;
+  --bg-tint: rgba(138, 196, 242, 0.14);
+  --bg-tint-soft: rgba(138, 196, 242, 0.09);
+  --border-subtle: #25313e;
+  --border-tint: #395875;
+  --accent-solid: #8fc7f4;
+  --accent-solid-hover: #a5d3f7;
+  --accent-solid-fg: #0d151d;
+  --accent-text: #9ed0f7;
+}
+
+:root[data-palette="peach"] {
+  --bg-canvas: #faf6f3;
+  --bg-card: #ffffff;
+  --bg-surface-muted: #f4ebe4;
+  --bg-surface-secondary: #f6efe9;
+  --bg-tint: #fae9da;
+  --bg-tint-soft: #fcf2e9;
+  --border-subtle: #ece0d6;
+  --border-tint: #e4c1a8;
+  --accent-solid: #974c2b;
+  --accent-solid-hover: #7f3e21;
+  --accent-solid-fg: #ffffff;
+  --accent-text: #854123;
+}
+
+.dark[data-palette="peach"] {
+  --bg-canvas: #16110f;
+  --bg-card: #1f1815;
+  --bg-surface-muted: #28201b;
+  --bg-surface-secondary: #2a211c;
+  --bg-tint: rgba(240, 180, 142, 0.14);
+  --bg-tint-soft: rgba(240, 180, 142, 0.09);
+  --border-subtle: #352923;
+  --border-tint: #684938;
+  --accent-solid: #f0b692;
+  --accent-solid-hover: #f4c5a7;
+  --accent-solid-fg: #1b120e;
+  --accent-text: #f3c2a4;
+}
+
+:root[data-palette="rose"] {
+  --bg-canvas: #faf5f7;
+  --bg-card: #ffffff;
+  --bg-surface-muted: #f3e9ed;
+  --bg-surface-secondary: #f6edf1;
+  --bg-tint: #f8e4ea;
+  --bg-tint-soft: #fbf0f3;
+  --border-subtle: #ecdfe4;
+  --border-tint: #e2b8c6;
+  --accent-solid: #8c3d55;
+  --accent-solid-hover: #743146;
+  --accent-solid-fg: #ffffff;
+  --accent-text: #7b344a;
+}
+
+.dark[data-palette="rose"] {
+  --bg-canvas: #161013;
+  --bg-card: #1f171b;
+  --bg-surface-muted: #281e23;
+  --bg-surface-secondary: #2a1f24;
+  --bg-tint: rgba(238, 157, 180, 0.14);
+  --bg-tint-soft: rgba(238, 157, 180, 0.09);
+  --border-subtle: #36272e;
+  --border-tint: #663d4d;
+  --accent-solid: #efa1b8;
+  --accent-solid-hover: #f3b5c7;
+  --accent-solid-fg: #1b1014;
+  --accent-text: #f3b1c4;
+}
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  code,
+  kbd,
+  samp,
+  pre,
+  .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
